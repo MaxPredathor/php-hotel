@@ -1,4 +1,4 @@
-<?php include '/model/db.php'; ?>
+<?php include './Model/db.php'; ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -29,7 +29,7 @@
 
   <body>
     <header>
-        
+
     </header>
 
 
