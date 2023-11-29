@@ -19,9 +19,14 @@
                     <tr>
                         <th scope="row"><?php echo $hotel['name']; ?></th>
                         <td><?php echo $hotel['description']; ?></td>
-                        <td><?php echo $hotel['parking']; ?></td>
+                        <td><?php if ($hotel['parking']) {  ?>
+                                Avaliable 
+                            <?php } else { ?>
+                                No-Parking
+                            <?php } ?>
+                        </td>    
                         <td><?php echo $hotel['vote']; ?></td>
-                        <td><?php echo $hotel['distance_to_center']; ?></td>
+                        <td><?php echo $hotel['distance_to_center'].' km'; ?></td>
                     </tr>
                 <?php } ?>  
             </tbody>
